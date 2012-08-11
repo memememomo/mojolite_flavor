@@ -1,0 +1,2 @@
+mojolite_flavor
+===============
