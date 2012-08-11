@@ -1,0 +1,23 @@
+[% WRAPPER "layouts/default.tmpl" %]
+
+<div class="hero-unit">
+  <h1>APP TITLE</h1>
+  <p>説明文</p>
+</div>
+
+<div class="row">
+  <div class="span4">
+    <h3>ブロック1</h3>
+    あああああああ
+  </div>
+  <div class="span4">
+    <h3>ブロック2</h3>
+    あああああああ
+  </div>
+  <div class="span4">
+    <h3>ブロック3</h3>
+    あああああああ
+  </div>
+</div>
+
+[% END %]

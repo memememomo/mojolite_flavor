@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>**** APP TITLE *****</title>
+    <link rel="stylesheet" type="text/css" href="[% c.url_for('/static/css/bootstrap.min.css') %]" />
+    <script type="text/javascript" src="[% c.url_for('/static/js/lib/jquery.min.js') %]"></script>
+    [% INCLUDE ext_js %]
+    [% BLOCK ext_js %][% END %]
+    [% INCLUDE ext_css %]
+    [% BLOCK ext_css %][% END %]
+    <style type="text/css">
+      body {
+         padding-top: 60px;
+         padding-bottom: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+	<a class="brand" href="[% c.url_for('index') %]">APP TITLE</a>
+	<ul class="nav">
+	  <li><a href="[% c.url_for('') %]">メニュー1</a></li>
+	  <li><a href="[% c.url_for('') %]">メニュー2</a></li>
+	  <li><a href="[% c.url_for('') %]">メニュー3</a></li>
+	</ul>
+      </div>
+    </div>
+    <div class="container">
+      [% content %]
+    </div>
+  </body>
+</html>
