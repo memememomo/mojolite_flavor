@@ -85,6 +85,13 @@ sub register {
             );
         }
     );
+
+    $app->helper(
+        req_to_hash => sub {
+            my $c = shift;
+            return $c->req->params->to_hash;
+        }
+    );
 }
 
 

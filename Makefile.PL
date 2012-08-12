@@ -7,6 +7,7 @@ requires 'MojoX::Rendlserer::TT';
 requires 'HTML::FillInForm::Lite';
 requires 'Teng';
 requires 'Class::Method::Modifiers';
+requires 'Digest::SHA1';
 
 tests 't/*.t';
 
